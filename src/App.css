@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+/* 검색 영역 */
+.search_wrap {
+  width: 100%;
+  height: 60px;
+  padding: 0 50px;
+  background: #999;
+  display: flex;
+  justify-content: end;
+}
+
+.search_wrap .search {
+  display: flex;
+  align-items: center;
+}
+
+.movie_list_wrap {
+  display: flex;
+  justify-content: center;
+  background: #202227;
+  padding: 150px;
+}
+
+.movie_list_wrap .movie_list_container {
+  display: flex;
+  width: 1400px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie_list_wrap .movie_list {
+  position: relative;
+  width: 200px;
+  height: 360px;
+  margin: 0 15px 20px 15px;
+  overflow: hidden;
+}
+
+.movie_list_wrap .movie_list .img_area {
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-color: #000;
+}
+
+.movie_list_wrap .img_area .movie_rating {
+  display: inline-block;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3px;
+  font-size: 11px;
+  border-radius: 5px 5px;
+}
+.movie_list_wrap .movie_list .title_area {
+  padding: 20px;
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.desc_date {
+  margin-top: 10px;
+}
+
+.movie_list_wrap .movie_list .movie_description {
+  padding: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  font-size: 12px;
+  line-height: 1.25;
+  /*transform: translateY(100%);*/
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+.movie_list_wrap .movie_list:hover .movie_description {
+  opacity: 0.9;
+}
